@@ -1,0 +1,166 @@
+a{
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.space{
+    width: 2px;
+    height: 35px;
+    background-color: #666;
+    margin:19px 12px 0px;
+}
+.fr{
+    float: right;
+}
+.fl{
+    float: left;
+}
+
+.wrapper {
+    width: 100%;
+}
+.head, 
+.content, 
+.foot {
+    width: 980px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+.head{
+    height: 75px;
+    line-height: 75px;
+    font-size: 20px;
+}
+.head ul{
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+.head li{
+    float: left;
+
+}
+.head span{
+    font-size: 16px;
+}
+.head .bigger{
+    font-size: 24px;
+    color: #a7bbcd;
+}
+.head li a{
+    font-size: 16px;
+    color: red;
+}
+.head img{
+    margin-top: 15px;
+}
+
+
+
+
+
+.nav{
+    width: 100%;
+    height: 20px;
+    background: url(../image/nav.png) no-repeat center top;
+}
+
+
+.mod-reg {
+    position: relative;
+    background-color: green;
+}
+.reg-content {
+    position: relative;
+    width: 720px;
+    overflow: hidden;
+    float: left;
+    top: 105px;
+}
+.name,
+.phone,
+.code,
+.recode,
+.nickname{
+    width: 720px;
+    height: 42px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+input::-webkit-input-placeholder{
+    font-size: 16px;
+}
+
+/*.accept{
+    font-size: 14px;
+}
+.accept a{
+    color:#a7bbcd;
+ } */  
+.submit .submitbutton{
+    /*#dd4242*/
+    background-color: #dd4242;
+    width: 325px;
+    display: block;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 30px;
+    border-radius: 5px;
+    color:#fff;
+}
+.picture{
+    float: right;
+    width: 623px;
+    height: 337px;
+    position: absolute;
+    top: 20px;
+    right: -180px;
+    /*background-color: black;*/
+    background: url(../image/bgc.png) no-repeat center top;
+}
+
+
+.foot{
+    border-top: 5px solid #DBDBDB;
+    padding: 20px 0 20px;
+    margin-top: 480px;
+    height: 81px;
+}
+.foot .link{
+    text-align: center;
+    height: 16px;
+    font-size: 14px;
+}
+.foot .link a{
+    color: #a7bbcd;
+}
+.foot .link span{
+    color: #666;
+    margin:0 15px;
+}
+.foot .link .c{
+    color: #dd4242;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
