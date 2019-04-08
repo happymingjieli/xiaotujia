@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>我的订单</title>
+    <!-- <link rel="stylesheet" href="css/style.css"/> -->
+    <link rel="stylesheet" href="css/normalize.css" type="text/css" />
+    <link rel="stylesheet" href="css/order.css" type="text/css" /> 
+    <!-- <script type="text/javascript" src="js/script.js"></script> -->
+</head>
+<body>
+
+<div class="wrapper">
+        <div class="head">
+                <ul class="fl">
+                    <li><img src="image/xiaotujia.png"></li>
+                    <li class="space"></li>
+                    <li><span class="bigger">我的订单</span></li>
+                </ul>
+                <ul class="fr">
+                    <li><span >返回到购物车</span></li>
+                    <li><a href="#">购买</a></li>
+                    <li><i class="shopC"></i></li>
+                </ul>
+        </div>
+
+        <div class="nav"></div>
+
+        <div class="address">
+        	<div class="new">
+        		<a class="fr" href="#">管理收货地址</a>
+        	</div>
+        	<div class="fir moren">
+        		<p style="border-bottom: 1px dashed #ccc;line-height: 28px;">浙江杭州（李小花收）</p>
+        		<p>萧山 北干 名医花园54幢3单元 13889793454</p>
+        	</div>
+        	<div class="sec">
+        		<p style="border-bottom: 1px dashed #ccc;line-height: 28px;">山东济南（张大叔收）</p>
+        		<p>平原 骊山 沙河社区5幢9单元 15842040633</p>
+        	</div>
+        	<div class="thi">
+        		<p style="border-bottom: 1px dashed #ccc;line-height: 28px;">辽宁鞍山（姜黎黎收）</p>
+        		<p>铁东 腾鳌 鞍山第一中学 188675434565</p>
+        	</div>
+        	<div class="for">
+        		<p style="border-bottom: 1px dashed #ccc;line-height: 28px;">江苏徐州（牛可爱收）</p>
+        		<p>和平 将君路 和平花园3幢1单元 15889543454</p>
+        	</div>
+        </div>
+
+        <div class="content">
+            <table id="cartTable">
+                <thead>
+                    <tr>
+                        <th>商品ID</th>
+                        <th>商品名称</th>
+                        <th>单价</th>
+                        <th>数量</th>
+                        <th>小计</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="number">1234567891</td>
+                        <td class="goods"><img src="image/2.jpg" alt=""/><span>Dior迪奥口红哑光热卖烈焰蓝金唇膏滋润口红</span></td>
+                        <td class="price">5999.88</td>
+                        <td class="count">
+                            <span class="reduce"></span>
+                            <input class="count-input" type="text" value="1"/>
+                            <span class="add">+</span></td>
+                        <td class="subtotal">5999.88</td>
+                        <td class="operation"><span class="delete">删除</span></td>
+                    </tr>
+                    <tr>
+                        <td class="number">1234567892</td>
+                        <td class="goods"><img src="image/3.jpg" alt=""/><span>lv2018冬季新款/大容量/牛皮革包包</span></td>
+                        <td class="price">3888.50</td>
+                        <td class="count"><span class="reduce"></span><input class="count-input" type="text" value="1"/><span class="add">+</span></td>
+                        <td class="subtotal">3888.50</td>
+                        <td class="operation"><span class="delete">删除</span></td>
+                    </tr>
+                    <tr>
+                        <td class="number">1234567893</td>
+                        <td class="goods"><img src="image/4.jpg" alt=""/><span>好孩子儿童枕头婴儿枕头0-10岁幼儿园3D摩丝透气枕冬棉四季通用</span></td>
+                        <td class="price">1428.50</td>
+                        <td class="count"><span class="reduce"></span><input class="count-input" type="text" value="1"/><span class="add">+</span></td>
+                        <td class="subtotal">1428.50</td>
+                        <td class="operation"><span class="delete">删除</span></td>
+                    </tr>
+                    <tr>
+                        <td class="number">1234567894</td>
+                        <td class="goods"><img src="image/5.jpg" alt=""/><span>施华洛世奇SWK SHINE跳动的心锁骨项链</span></td>
+                        <td class="price">640.60</td>
+                        <td class="count"><span class="reduce"></span><input class="count-input" type="text" value="1"/><span class="add">+</span></td>
+                        <td class="subtotal">640.60</td>
+                        <td class="operation"><span class="delete">删除</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="foot" id="foot">
+             <!-- <label class="fl select-all"><input type="checkbox" class="check-all check"/>&nbsp;全选</label> -->
+             <!-- <a class="fl delete" id="deleteAll" href="javascript:;">删除</a> -->
+             <div class="fr closing">提交订单</div>
+             <div class="fl total">合计：￥<span id="priceTotal">0.00</span></div>
+             <div class="fl selected" id="selected">共计商品
+                 <span id="selectedTotal">0</span>&nbsp;件
+                 <!-- <span class="arrow up">︽</span>
+                 <span class="arrow down">︾</span> -->
+             </div>
+             <div class="selected-view">
+                 <div id="selectedViewList" class="clearfix">
+                     <!--<div><img src="images/1.jpg"><span>取消选择</span></div>-->
+                 </div>
+                 <span class="arrow">◆<span>◆</span></span>
+             </div>
+        </div>
+        <div class="footer">
+            <div class="link">
+              <p>
+                <a href="#">关于小土家</a>
+                <span>|</span>
+                <a href="#">常见问题</a>
+                <span>|</span>
+                <a href="#">违规投诉</a>
+                <span>|</span>
+                <a href="#">开放平台</a>
+                <span>|</span>
+                <a href="#">用户协议</a>
+                <span>|</span>
+                <a href="#">客服电话：</a>
+                <a class="c" href="#">400-9216-666</a>
+             </p>
+            </div>
+        </div>
+</div>
+
+
+
+</body>
+</html>
+
+
+
+
+
